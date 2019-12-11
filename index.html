@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="open">
+<body>
     <header>
         <div class="nav">
             <div class="menu-toggle">
@@ -25,10 +25,10 @@
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Menu</a>
+                        <a href="#menu" class="nav-link">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Reservations</a>
@@ -40,7 +40,7 @@
                         <a href="index.html" class="nav-link">shop</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Contact</a>
+                        <a href="#footer" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -88,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="tastful-recipes between">
+    <section class="tastful-recipes between" id="recipes">
         <div class="container">
             <div class="global-headline">
                 <div class="animate-top">
@@ -102,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="discover-our-menu">
+    <section class="discover-our-menu" id="menu">
         <div class="container">
             <div class="restaurant-info">
                 <div class="image-group padding-right animate-left">
@@ -166,33 +166,49 @@
         </div>
     </section>
     <footer>
-        <div class="container">
+        <div class="container" id="footer">
             <div class="back-to-top">
-                <a href="" id="hero"><i class="fas fa-chevron-up"></i></a>
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
             </div>
             <div class="footer-content">
-                <div class="footer-content-about animate-up">
+                <div class="footer-content-about animate-top">
                     <h4>About Rosa</h4>
-                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <div class="asterisk">
+                        <i class="fas fa-asterisk"></i>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas alias aliquam animi. Nostrum,
                         provident accusantium, harum magnam, suscipit neque rerum quis repudiandae dolorem eveniet
                         quisquam quo molestias repellat iusto numquam.</p>
                 </div>
-                <div class="footer-content-discover animate-bottom">
+                <div class="footer-content-divider animate-bottom">
                     <div class="social-media">
                         <h4>Follow along</h4>
                         <ul class="social-icons">
                             <li>
                                 <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
                                 <a href=""><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
                                 <a href=""><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
                                 <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-tripadvisor"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="newsletter-container">
                         <h4>newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="text" class="newsletter-input" placeholder="your email">
+                            <button class="newsletter-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
