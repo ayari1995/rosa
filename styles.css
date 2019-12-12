@@ -141,6 +141,7 @@ header {
 	display: flex;
 	align-items: center;
 	text-align: center;
+	background-attachment: fixed;
 }
 .sub-headline {
 	font-size: 8.5rem;
@@ -313,6 +314,7 @@ header {
 .tastful-recipes {
 	background: url(images/tasteful-recipes.jpg) center no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 .between {
 	min-height: 65vh;
@@ -334,6 +336,7 @@ header {
 .perfect-blend {
 	background: url('images/perfect-blend.jpg') center no-repeat;
 	background-size: cover;
+	 background-attachment: fixed;
 }
 /*footer*/
 footer {
